@@ -12,10 +12,10 @@ const Movie = async () => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'c02fbc68bcmshbcf86db29a2c655p12007cjsn9adea8d51505',
-            'X-RapidAPI-Host': 'netflix54.p.rapidapi.com'
+          'X-RapidAPI-Key': '39b11b4a1amsh618765baed7258bp1cf838jsn0d29d01407e2',
+          'X-RapidAPI-Host': 'netflix54.p.rapidapi.com'
         }
-    };
+      };
 
     const res = await fetch(url, options);
     const data = await res.json();

@@ -5,16 +5,16 @@ import Image from "next/image";
 const Page = async ({params}) => {
     const id = params.id;
 
-    const url = `https://netflix54.p.rapidapi.com/title/details/?ids=${id}&lang=en`;
+    
+    const url = `https://netflix54.p.rapidapi.com/title/details/?ids=${id}Y&lang=en`;
 
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'c02fbc68bcmshbcf86db29a2c655p12007cjsn9adea8d51505',
-            'X-RapidAPI-Host': 'netflix54.p.rapidapi.com'
+          'X-RapidAPI-Key': '39b11b4a1amsh618765baed7258bp1cf838jsn0d29d01407e2',
+          'X-RapidAPI-Host': 'netflix54.p.rapidapi.com'
         }
-    };
-
+      };
     const res = await fetch(url, options);
     const data = await res.json();
     const main_data = data[0].details;
